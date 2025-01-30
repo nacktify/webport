@@ -266,25 +266,68 @@ main {
 /* i need support */
 
 .support {
-    background-image: url('../assets/handshake.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url('../assets/handshake.jpg');
     border-radius: 16px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 64px;
+    padding: 64px;
 }
 
-form input[text] {
-    padding: 17px 24px;
+.support-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.support-desc {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    margin-bottom: 16px;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+form>input {
+    text-decoration: none;
+}
+
+form>.feedback-input {
+    padding: 19px 24px;
     border-radius: 8px;
-    border: 1px solid #0D1321;
     opacity: 0.8;
     color: #0D1321;
     text-align: center;
+    font-size: 16px;
+}
+
+/* footer */
+footer {
+    margin-top: 80px;
+    background: rgba(13, 19, 33, 0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 150px;
+}
+
+.foot-title {
+    color: #0D1321;
     font-size: 20px;
     font-weight: 600;
 }
